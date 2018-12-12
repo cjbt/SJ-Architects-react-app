@@ -1,4 +1,9 @@
 import React from "react";
+import Footer from "./Footer";
+
+import jumboDesktop from "./img/home/home-jumbotron.png";
+import jumboMobile from "./img/home/home-mobile-jumbotron.png";
+
 import homeDesktop from "./img/home/home-img-1.png";
 import homeMobile from "./img/home/home-mobile-img-1.png";
 import homeTwoDesktop from "./img/home/home-img-2.png";
@@ -11,10 +16,28 @@ import blockDesktop from "./img/home/home-the-blocks-img.png"
 import blockMobile from "./img/home/home-mobile-the-blocks-img.png"
 
 
+
+
+
+
+
 class Home extends React.Component {
   render() {
     return (
       <div>
+        <section className="header-section">
+        <header>
+          <img src={jumboDesktop} alt="" class="img--desktop" />
+          <img src={jumboMobile} alt="" className="img--mobile" />
+          <h1>
+            Integrity,
+            <br />
+            Excellence,
+            <br />
+            Progress.
+          </h1>
+        </header>
+      </section>
         {/* top content */}
         <section className="top-content">
           <div className="tp-item">
@@ -144,6 +167,7 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }
