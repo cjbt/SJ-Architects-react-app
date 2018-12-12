@@ -13,6 +13,13 @@ import jumboDesktop from "./img/services/services-jumbotron.png"
 import jumboMobile from "./img/services/services-mobile-jumbotron.png"
 
 class Services extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isClicked: true
+    }
+  }
+
   render() {
     return (
       <div className="container services-page">
