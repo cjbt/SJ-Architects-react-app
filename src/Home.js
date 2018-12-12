@@ -24,7 +24,7 @@ import blockMobile from "./img/home/home-mobile-the-blocks-img.png"
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div clasName="container home-page">
         <section className="header-section">
         <header>
           <img src={jumboDesktop} alt="" class="img--desktop" />
