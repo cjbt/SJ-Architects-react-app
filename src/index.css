@@ -709,3 +709,7 @@ body .img--mobile {
 .nav-open {
   display: block;
 }
+
+.navh2 {
+  text-decoration: none;
+}

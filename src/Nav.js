@@ -26,7 +26,7 @@ class Nav extends React.Component {
     return (
       <div className="nav-bar">
         <div className={this.state.onLoad ? "nav--clicked nav-container" : "nav-container"}>
-          <h2>S&J</h2>
+        <NavLink to="/" className="navh2"><h2>S&J</h2></NavLink>
           <nav className={this.state.onLoad ? "nav-open" : "nav-close"}>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/services">Services</NavLink>
