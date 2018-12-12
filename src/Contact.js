@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 
 import jumboDesktop from "./img/contact/contact-jumbotron.png";
 import jumboMobile from "./img/contact/contact-mobile-jumbotron.png";
@@ -106,8 +105,6 @@ class Contact extends React.Component {
             </div>
           </div>
         </section>
-
-        <Footer />
       </div>
     );
   }

@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 
 import preConstruction from "./img/services/services-tab-pre-construction-img.png";
 import preConstructionMobile from "./img/services/services-tab-mobile-pre-construction-img.png";
@@ -19,7 +18,7 @@ class Services extends React.Component {
       <div className="container services-page">
         <section className="header-section">
           <header>
-            <img src={jumboDesktop} alt="" class="img--desktop" />
+            <img src={jumboDesktop} alt="" className="img--desktop" />
             <img src={jumboMobile} alt="" className="img--mobile" />
             <h1>Services</h1>
           </header>
@@ -158,7 +157,6 @@ class Services extends React.Component {
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     );
   }

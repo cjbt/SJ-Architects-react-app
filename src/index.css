@@ -150,6 +150,7 @@ table {
   height: 100vh;
   opacity: 0.95;
 }
+
 .nav-bar .nav--clicked h2 {
   padding-top: 10px;
 }
@@ -431,6 +432,7 @@ table {
   margin-top: 5px;
   padding: 10px;
 }
+
 .contact-page .contact-main .left-content form input[type=text],
 .contact-page .contact-main .left-content form textarea,
 .contact-page .contact-main .left-content form select {
@@ -697,4 +699,13 @@ body .img--mobile {
   body .img--desktop {
     display: none;
   }
+}
+
+
+.nav-close {
+  display: none;
+}
+
+.nav-open {
+  display: block;
 }

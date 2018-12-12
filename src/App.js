@@ -6,12 +6,13 @@ import Services from './Services';
 import Contact from "./Contact";
 import Error from "./Error";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="container home-page">
+        <div>
           <Nav />
           <Switch>
             <Route path="/" component={Home} exact/>
@@ -19,6 +20,7 @@ class App extends Component {
             <Route path="/contact" component={Contact}/>
             <Route component={Error}/>
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     );
