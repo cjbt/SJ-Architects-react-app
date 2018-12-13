@@ -142,7 +142,7 @@ table {
   width: 100%;
   left: 0;
   position: fixed;
-  z-index: 999;
+  z-index: 800;
 }
 .nav-bar .nav--clicked {
   background-color: #98A4AF;
@@ -712,4 +712,13 @@ body .img--mobile {
 
 .navh2 {
   text-decoration: none;
+}
+
+.redblock {
+  height: 100vh;
+  background-color: red;
+  color: white;
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
 }
