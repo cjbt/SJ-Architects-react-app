@@ -20,11 +20,11 @@ class App extends Component {
     this.setState(prevState => ({ onLoad: !prevState.onLoad }));
   };
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ isClicked: false });
-    }, 20000);
-  }
+  // componentDidMount() {
+  //   setTimeout(() => {
+  //     this.setState({ isClicked: false });
+  //   }, 20000);
+  // }
 
   render() {
     return (
