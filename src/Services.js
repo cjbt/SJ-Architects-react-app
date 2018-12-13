@@ -21,18 +21,11 @@ class Services extends React.Component {
   }
 
   componentDidMount() {
-    document
-  .querySelectorAll(".tabs-link")
-  .forEach(item => new TabLink(item));
-
+    document.querySelectorAll(".tabs-link").forEach(item => new TabLink(item));
   }
 
-
   componentDidUpdate() {
-    document
-  .querySelectorAll(".tabs-link")
-  .forEach(item => new TabLink(item));
-
+    document.querySelectorAll(".tabs-link").forEach(item => new TabLink(item));
   }
 
   render() {

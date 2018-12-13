@@ -4,44 +4,27 @@ import { NavLink } from "react-router-dom";
 import burger from "./img/nav-hamburger.png";
 import burgerClose from "./img/nav-hamburger-close.png";
 
-class Nav extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      onLoad: false
-    }
-  }
-
-  handleChange = ()=> {
-    this.setState(prevState => ({onLoad: !prevState.onLoad}))
-  }
-
-  componentDidMount() {
-    
-    
-  }
-
-
-  render() {
+const Nav = (props)=> {
+ 
     return (
       <div className="nav-bar">
-        <div className={this.state.onLoad ? "nav--clicked nav-container" : "nav-container"}>
+        <div className={props.onLoad ? "nav--clicked nav-container" : "nav-container"}>
         <NavLink to="/" className="navh2"><h2>S&J</h2></NavLink>
-          <nav className={this.state.onLoad ? "nav-open" : "nav-close"}>
+          <nav className={props.onLoad ? "nav-open" : "nav-close"}>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/services">Services</NavLink>
             <NavLink to="/contact">Contact</NavLink>
           </nav>
-          <div className="burger" onClick={this.handleChange}>
-            <img src={burger} alt="hamburger menu img" className={this.state.onLoad ? "nav-close" : "nav-open"} />
-            <img src={burgerClose} alt="" className={this.state.onLoad ? "nav-open" : "nav-close"}  />
+          <div className="burger" onClick={ ()=>props.handleChange()}>
+            <img src={burger} alt="hamburger menu img" className={props.onLoad ? "nav-close" : "nav-open"} />
+            <img src={burgerClose} alt="" className={props.onLoad ? "nav-open" : "nav-close"}  />
           </div>
         </div>
       </div>
     );
   }
 
-}
+
 
 export default Nav;
 

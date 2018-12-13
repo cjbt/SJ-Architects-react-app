@@ -9,11 +9,21 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      onLoad: false
+    }
+  }
+  handleChange = ()=> {
+    this.setState(prevState => ({onLoad: !prevState.onLoad}))
+  }
+
   render() {
     return (
       <BrowserRouter>
         <div>
-          <Nav />
+          <Nav onLoad={this.state.onLoad} handleChange={this.handleChange}/>
           <Switch>
             <Route path="/" component={Home} exact/>
             <Route path="/services" component={Services}/>

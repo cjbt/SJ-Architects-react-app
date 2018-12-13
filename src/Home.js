@@ -20,8 +20,8 @@ import blockMobile from "./img/home/home-mobile-the-blocks-img.png"
 
 
 
-class Home extends React.Component {
-  render() {
+const Home = ()=> {
+
     return (
       <div className="container home-page">
         <section className="header-section">
@@ -168,7 +168,6 @@ class Home extends React.Component {
         </section>
       </div>
     );
-  }
 }
 
 export default Home;
