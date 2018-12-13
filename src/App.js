@@ -23,7 +23,7 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ isClicked: false });
-    }, 20000);
+    }, 5000);
   }
 
   render() {
