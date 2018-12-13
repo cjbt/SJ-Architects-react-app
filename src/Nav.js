@@ -21,11 +21,10 @@ class Nav extends React.Component {
 
 
     // return <div ref={div => this.myElement = div} />;
-
+    // className="nav-bar" ref={div => this.myElement = div}
   render() {
     return (
-      // //className="nav-bar" ref={div => this.myElement = div}
-      <div > 
+      <div >
         <div
           className={
             this.props.onLoad ? "nav--clicked nav-container" : "nav-container"
