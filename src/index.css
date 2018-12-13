@@ -715,10 +715,24 @@ body .img--mobile {
 }
 
 .redblock {
-  height: 100vh;
+  padding-top: 250px;
+  height: 500vh;
   background-color: red;
   color: white;
   position: absolute;
   z-index: 999;
   width: 100vw;
+  left: 0;
+  display: none;
+  justify-content: center;
+
+}
+
+.redfont {
+  font-size: 2.5rem;
+  cursor: pointer;
+
+}
+.banana {
+  display: flex;
 }

@@ -12,18 +12,40 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      onLoad: false
+      onLoad: false,
+      isClicked: true
     };
   }
   handleChange = () => {
     this.setState(prevState => ({ onLoad: !prevState.onLoad }));
   };
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ isClicked: false });
+    }, 20000);
+  }
+
   render() {
     return (
       <BrowserRouter>
-        <div >
-        
+        <div>
+          <div
+            className={this.state.isClicked ? "redblock" : "banana redblock"}
+          >
+            <h1>YOU'VE BEEN HACKED</h1>
+            <div
+              className="redfont"
+              onClick={() => {
+                this.setState(prevState => ({
+                  isClicked: !prevState.isClicked
+                }));
+              }}
+            >
+              {" "}
+              jk
+            </div>
+          </div>
           <Nav onLoad={this.state.onLoad} handleChange={this.handleChange} />
           <Switch>
             <Route path="/" component={Home} exact />
